@@ -1,0 +1,42 @@
+body{
+    background: #000;
+}
+.bulb{
+   margin-left: 450px;
+    margin-top: 60px;
+}
+.image{
+    height: 600px ;
+    width: 600px;
+    z-index: -1;
+    /* position: fixed; */
+    background: url("bulb.jpg") no-repeat center center/cover;
+}
+.color{
+    height: 360px;
+    width: 360px;
+    border-radius: 50%;
+    background: radial-gradient(#fff, #fdfef6, #fdffe5, #fefed3, #ffffb5, #fdfeac, #fdfeac, #ffe252, #fee074, yellow, orange, red ,#A91200);
+    margin-top: -10px;
+    margin-left: 120px;
+    z-index: 200 !important;
+    opacity: 0.99;
+    animation-name: ak;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+
+}
+@keyframes ak{
+    0%{
+        display: none;
+        opacity: 0;
+    }
+    50%{
+        display: block;
+        opacity: 1;
+    }
+    100%{
+        display: none;
+        opacity: 0;
+    }
+}
